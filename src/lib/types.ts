@@ -1,0 +1,1 @@
+export type Priority='CRITICAL'|'DEFAULT'|'LOW';export type JobState='QUEUED'|'PROCESSING'|'COMPLETED'|'FAILED';export type Job={id:string;queueName:string;jobType:string;priority:Priority;state:JobState;attempts:number;maxAttempts:number;durationMs:number;payload:Record<string,unknown>;createdAt:string};
